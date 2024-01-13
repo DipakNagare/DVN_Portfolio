@@ -34,15 +34,14 @@ const Contact = () => {
   
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_USERID,
-        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        'service_li9es8l',
+        'template_izm9kyo', 
         {
           from_name: form.name,
-          to_name: "Dipak Nagare",
           from_email: form.email,
-          to_email: "dipaknagare352699@gmail.com",
           message: form.message,
         },
+        'E1A3TzyWdLB_6k9_i'
         )
       .then(
         (response) => {

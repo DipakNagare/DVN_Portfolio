@@ -13,12 +13,8 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleDownloadClick = () => {
-    const link = document.createElement("a");
-    link.href = CV;  // Use the imported path to your CV file
-    link.download = "Dipak_Full Stack_Resume_Updated.pdf";  // Set the desired name for the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  // Add logic to handle the Drive link
+  window.location.href = "https://drive.google.com/file/d/1AQsrJuTYj7TpEKlld2MOvucQTOb0y9R6/view?usp=sharing";
   };
 
   useEffect(() => {
