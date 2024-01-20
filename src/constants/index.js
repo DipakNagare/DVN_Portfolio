@@ -80,10 +80,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -112,14 +112,14 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -136,20 +136,20 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
-  {
-    title: "Software Developer",
-    company_name: "Pratiti Technologies",
-    icon: Pratitilogo,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - March 2023",
-    points: [
-      "Project: Token Generation System for Bank.",
-      "Developing and maintaining web applications using ReactJS, Java, Spring Boot, MySQL, Git, Boostrap and other related technologies.",
-      "We have successfully developed a web application for a bank, providing a robust and efficient TokenGeneration System",
-      "Followed the MVC architecture and adhered to industry best software practices to ensure a secure and reliable platform.",
-      "We improved the user experience by implementing a user-friendly interface and streamlining the token generation process, leading to increased customer satisfaction.",
-    ],
-  },
+  // {
+  //   title: "Software Developer",
+  //   company_name: "Pratiti Technologies",
+  //   icon: Pratitilogo,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - March 2023",
+  //   points: [
+  //     "Project: Token Generation System for Bank.",
+  //     "Developing and maintaining web applications using ReactJS, Java, Spring Boot, MySQL, Git, Boostrap and other related technologies.",
+  //     "We have successfully developed a web application for a bank, providing a robust and efficient TokenGeneration System",
+  //     "Followed the MVC architecture and adhered to industry best software practices to ensure a secure and reliable platform.",
+  //     "We improved the user experience by implementing a user-friendly interface and streamlining the token generation process, leading to increased customer satisfaction.",
+  //   ],
+  // },
   // {
   //   title: "Web Developer",
   //   company_name: "Shopify",

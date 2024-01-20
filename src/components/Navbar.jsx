@@ -17,7 +17,7 @@ const Navbar = () => {
   window.location.href = "https://drive.google.com/file/d/1AQsrJuTYj7TpEKlld2MOvucQTOb0y9R6/view?usp=sharing";
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 100) {
@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            DVN &nbsp;
+            Dipak&nbsp;
             <span className='sm:block hidden'> | Portfolio</span>
           </p>
         </Link>

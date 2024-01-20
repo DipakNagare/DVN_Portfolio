@@ -48,7 +48,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled Full stack developer with experience in Java, JavaScript,
-        HTML5, CSS3,and expertise in frameworks like React, Node.js, Spring boot
+        HTML5, CSS3,and expertise in frameworks like ReactJs, Node.js, Spring boot
         and Express.My passion lies in creating user-friendly web applications 
         that deliver an exceptional.I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve

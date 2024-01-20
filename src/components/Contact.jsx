@@ -6,8 +6,10 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -31,24 +33,24 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     console.log("Before sending email...", form);
-  
+
     emailjs
       .send(
         'service_li9es8l',
-        'template_izm9kyo', 
+        'template_izm9kyo',
         {
           from_name: form.name,
           from_email: form.email,
           message: form.message,
         },
         'E1A3TzyWdLB_6k9_i'
-        )
+      )
       .then(
         (response) => {
           console.log("Email sent successfully!", response);
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-  
+          toast.success("Thank you. I will get back to you as soon as possible.");
+
           setForm({
             name: "",
             email: "",
@@ -58,15 +60,20 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error("Email sending failed:", error);
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
+
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+      <Toaster
+        position="bottom-right"
+        reverseOrder={false}
+      />
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'

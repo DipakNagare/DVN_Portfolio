@@ -3,7 +3,7 @@ import '../LodingSpinner.css'
 const LoadingSpinner = () => {
   return (
     <div className="LoadingSpinner-wrapper">
-      <span className="LoadingSpinner"></span>
+      <span class="loader"></span>
     </div>
   );
 };
